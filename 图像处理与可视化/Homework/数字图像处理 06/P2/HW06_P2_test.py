@@ -1,0 +1,66 @@
+import numpy as np
+from PIL import Image
+from numba import njit
+import matplotlib.pyplot as plt
+import cv2
+
+def compute_distance_transform(image: np.array):
+    return cv2.distanceTransform(image, cv2.DIST_C, 5).astype(np.uint8)
+
+def erode(image: np.array, threshold: int):
+    """
+    Parameters:
+    image: Grayscale array of the image
+    threshold: Threshold value to determine erosion effect (distance threshold)
+    Returns: Grayscale array of the image after erosion
+    """
+    distance_transform = compute_distance_transform(image)
+    image[(distance_transform > 0) & (distance_transform <= threshold)] = 0
+    return image
+
+# Dilation function
+def dilate(image: np.array, threshold: int):
+    """
+    Parameters:
+    image: Grayscale array of the image
+    threshold: Threshold value to determine dilation effect (distance threshold)
+    Returns: Grayscale array of the image after dilation
+    """
+    distance_transform = compute_distance_transform(255 - image)
+    image[(distance_transform > 0) & (distance_transform <= threshold)] = 255
+    return image
+
+if __name__ == '__main__':
+
+    # First, import the image and convert it to a numpy array
+    image_path = 'DIP 09.11(a)(noisy_fingerprint).bmp'
+    image_name = 'DIP 09.11(a)(noisy_fingerprint)'
+
+    # Open the image, convert it to grayscale and then convert to a numpy array
+    image = Image.open(image_path).convert('L')  # Convert the image to grayscale ('L' mode)
+    image = np.array(image)  # Convert the grayscale image to a numpy array
+    processed_image = np.copy(image)
+
+    processed_image = erode(processed_image, threshold=3)
+    processed_image = dilate(processed_image, threshold=3)
+    processed_image = dilate(processed_image, threshold=4)
+    processed_image = erode(processed_image, threshold=4)
+
+    # Plot the original and processed images side by side for comparison
+    plt.figure(figsize=(12, 6))
+
+    # Plot the original image
+    plt.subplot(1, 2, 1)
+    plt.imshow(image, cmap='gray')
+    plt.title("Original Image")
+    plt.axis('off')  # Hide axis ticks
+
+    # Plot the processed image
+    plt.subplot(1, 2, 2)
+    plt.imshow(processed_image, cmap='gray')
+    plt.title("Processed Image")
+    plt.axis('off')  # Hide axis ticks
+
+    # Display the comparison
+    plt.tight_layout()
+    plt.show()
