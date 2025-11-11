@@ -35,7 +35,7 @@
 - 英语论说文写作 (Patrick Thame) **(待更新…)**
 
 知乎主页: [Snivellus Snape](https://www.zhihu.com/people/ycy-hbp)  
-Bilibili 主页: [YCY_HBP](https://space.bilibili.com/1022387332?spm_id_from=333.1387.0.0)
+Bilibili 主页: [YCY_HBP](https://space.bilibili.com/1022387332?spm_id_from=333.1387.0.0)  
 邮箱地址: 21307140051@m.fudan.edu.cn  
 
 Zehao Zhang 学长 (@ForeverHaibara) star 我了 (开心 \o/)，  
