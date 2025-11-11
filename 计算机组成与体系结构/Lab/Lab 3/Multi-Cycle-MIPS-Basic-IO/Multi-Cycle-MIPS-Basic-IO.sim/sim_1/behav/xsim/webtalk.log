@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun  3 17:06:18 2024
+# Process ID: 5568
+# Current directory: C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.sim/sim_1/behav/xsim/xsim.dir/TestBench_IO_NEXYS_A7_100T_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Half -notrace
+invalid command name "[1028:4010][2023-06-15T18:36:18]i001:"
+    while executing
+"[1028:4010][2023-06-15T18:36:18]i001: Burn v3.10.4.4718, Windows v10.0 (Build 22000: Service Pack 0), path: C:\WINDOWS\Temp\{20909DB1-EEE9-4163-A0E7-9..."
+    (file "C:/Users/Half" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon Jun  3 17:06:18 2024...

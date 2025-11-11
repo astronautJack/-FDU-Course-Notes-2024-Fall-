@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1717317656">
+  <File Type="PA-TCL" Name="Top_NEXYS_A7_100T.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_NEXYS_A7_100T_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="Top_NEXYS_A7_100T_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Top_NEXYS_A7_100T.vds"/>
+  <File Type="RDS-UTIL" Name="Top_NEXYS_A7_100T_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Top_NEXYS_A7_100T_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Top_NEXYS_A7_100T.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_NEXYS_A7_100T_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_NEXYS_A7_100T_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/ALU.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/ALU.sv"/>
+        <Attr Name="ImportTime" Val="1712755912"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ALUCONTROL.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/ALUCONTROL.sv"/>
+        <Attr Name="ImportTime" Val="1712755766"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CLA32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/CLA32.sv"/>
+        <Attr Name="ImportTime" Val="1712755442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CLA4.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/CLA4.sv"/>
+        <Attr Name="ImportTime" Val="1712753310"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CLA4_Marked.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/CLA4_Marked.sv"/>
+        <Attr Name="ImportTime" Val="1712753353"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CLK_DIV.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DMDecoder_NEXYS_A7_100T.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DataMemory.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/DataMemory.sv"/>
+        <Attr Name="ImportTime" Val="1713180461"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DataPath.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/DataPath.sv"/>
+        <Attr Name="ImportTime" Val="1712758292"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Decoder.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/Decoder.sv"/>
+        <Attr Name="ImportTime" Val="1712763590"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/EXTENDER.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/EXTENDER.sv"/>
+        <Attr Name="ImportTime" Val="1712756227"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/IO.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/IO.sv"/>
+        <Attr Name="ImportTime" Val="1713185973"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/InstructionMemory_IO.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/InstructionMemory_IO.sv"/>
+        <Attr Name="ImportTime" Val="1713181175"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MIPS.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/MIPS.sv"/>
+        <Attr Name="ImportTime" Val="1713153847"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MUX2X32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/MUX2X32.sv"/>
+        <Attr Name="ImportTime" Val="1712753071"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MUX2X5.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/MUX2X5.sv"/>
+        <Attr Name="ImportTime" Val="1712756383"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MUX6X32.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/MUX6X32.sv"/>
+        <Attr Name="ImportTime" Val="1712755619"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MUX7SEG.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/MUX7SEG.sv"/>
+        <Attr Name="ImportTime" Val="1713188807"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/PC.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/PC.sv"/>
+        <Attr Name="ImportTime" Val="1712757368"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/PCadder.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/PCadder.sv"/>
+        <Attr Name="ImportTime" Val="1712757159"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/RegisterFile.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/RegisterFile.sv"/>
+        <Attr Name="ImportTime" Val="1712756766"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Multi-Cycle-MIPS-Basic-IO/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Shifter.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top_NEXYS_A7_100T.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/DMDecoder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/DMDecoder.sv"/>
+        <Attr Name="ImportTime" Val="1713186262"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Top_IO.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/Top_IO.sv"/>
+        <Attr Name="ImportTime" Val="1713186202"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/InstructionMemory.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/InstructionMemory.sv"/>
+        <Attr Name="ImportTime" Val="1712752963"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Top.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../笔记/计算机组成与体系结构/lab2/Single Cycle MIPS Processor_IO/Single Cycle MIPS Processor.srcs/sources_1/new/Top.sv"/>
+        <Attr Name="ImportTime" Val="1713154070"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lab2/TestIO.dat">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TestIO.dat"/>
+        <Attr Name="ImportTime" Val="1713181659"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top_NEXYS_A7_100T"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1713232829"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,576 @@
+
+*** Running vivado
+    with args -log Top_IO_NEXYS_A7_100T.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_IO_NEXYS_A7_100T.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source Top_IO_NEXYS_A7_100T.tcl -notrace
+Command: synth_design -top Top_IO_NEXYS_A7_100T -part xc7a100tcsg324-1 -gated_clock_conversion on -fsm_extraction off -keep_equivalent_registers -resource_sharing off -no_lc -no_srlextract
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 25136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 787.906 ; gain = 234.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_IO_NEXYS_A7_100T' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/Top_IO_NEXYS_A7_100T.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'MIPS' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MIPS.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Decoder.sv:5]
+	Parameter IFetch bound to: 5'b00000 
+	Parameter ID_RFetch bound to: 5'b00001 
+	Parameter MemAddr bound to: 5'b00010 
+	Parameter MemFetch bound to: 5'b00011 
+	Parameter LwFinish bound to: 5'b00100 
+	Parameter SwFinish bound to: 5'b00101 
+	Parameter RExecute bound to: 5'b00110 
+	Parameter RFinish bound to: 5'b00111 
+	Parameter BeqFinish bound to: 5'b01000 
+	Parameter BneFinish bound to: 5'b01001 
+	Parameter JumpFinish bound to: 5'b01010 
+	Parameter AddiExecute bound to: 5'b01011 
+	Parameter OriExecute bound to: 5'b01100 
+	Parameter AndiExecute bound to: 5'b01101 
+	Parameter AddiFinish bound to: 5'b01110 
+	Parameter OriFinish bound to: 5'b01111 
+	Parameter AndiFinish bound to: 5'b10000 
+	Parameter lw bound to: 6'b100011 
+	Parameter sw bound to: 6'b101011 
+	Parameter R bound to: 6'b000000 
+	Parameter beq bound to: 6'b000100 
+	Parameter bne bound to: 6'b000101 
+	Parameter j bound to: 6'b000010 
+	Parameter addi bound to: 6'b001000 
+	Parameter ori bound to: 6'b001101 
+	Parameter andi bound to: 6'b001100 
+INFO: [Synth 8-6157] synthesizing module 'MUX2X6' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X6.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2X6' (1#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X6.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (2#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Decoder.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'DataPath' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/DataPath.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'InstructionRegister' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/InstructionRegister.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionRegister' (3#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/InstructionRegister.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'DataRegister' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/DataRegister.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'DataRegister' (4#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/DataRegister.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Extender' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Extender.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX2X32' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X32.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2X32' (5#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X32.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'Extender' (6#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Extender.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/ProgramCounter.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (7#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/ProgramCounter.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX4X32_PC' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX4X32_PC.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX4X32_PC.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4X32_PC' (8#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX4X32_PC.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX2X5' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X5.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2X5' (9#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X5.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/RegisterFile.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (10#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/RegisterFile.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX3X32_Data' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX3X32_Data.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX3X32_Data' (11#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX3X32_Data.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX4X32_Data' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX4X32_Data.sv:5]
+INFO: [Synth 8-226] default block is never used [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX4X32_Data.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'MUX4X32_Data' (12#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MUX4X32_Data.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/ALU.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'ALUcontrol' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/ALUcontrol.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ALUcontrol' (13#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/ALUcontrol.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'CLA32' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/new/CLA32.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA4' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/new/CLA4.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLA4' (14#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/new/CLA4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CLA4_Marked' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/new/CLA4_Marked.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLA4_Marked' (15#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/new/CLA4_Marked.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'CLA32' (16#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/new/CLA32.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'MUX2X1' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X1.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX2X1' (17#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX2X1.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'Shifter' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Shifter.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'Shifter' (18#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/Shifter.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MUX6X32' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX6X32.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MUX6X32' (19#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MUX6X32.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (20#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/ALU.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'DataPath' (21#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/DataPath.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'MIPS' (22#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/Multi Cycle MIPS Processor.srcs/sources_1/new/MIPS.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'MemoryDecoder_NEXYS_A7_100T' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MemoryDecoder_NEXYS_A7_100T.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'Memory_IO' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/Memory_IO.sv:5]
+INFO: [Synth 8-3876] $readmem data file 'TestIO.dat' is read successfully [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/Memory_IO.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'Memory_IO' (23#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/Memory_IO.sv:5]
+INFO: [Synth 8-6157] synthesizing module 'IO' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/imports/new/IO.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'IO' (24#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/imports/new/IO.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK_div' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/new/CLK_DIV.sv:6]
+	Parameter N bound to: 32'sb00000000000000000010011100010000 
+INFO: [Synth 8-6155] done synthesizing module 'CLK_div' (25#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/new/CLK_DIV.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'MUX7SEG' [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/imports/new/MUX7SEG.sv:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/imports/new/MUX7SEG.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'MUX7SEG' (26#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/imports/sources_1/imports/new/MUX7SEG.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryDecoder_NEXYS_A7_100T' (27#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/MemoryDecoder_NEXYS_A7_100T.sv:6]
+INFO: [Synth 8-6155] done synthesizing module 'Top_IO_NEXYS_A7_100T' (28#1) [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/sources_1/new/Top_IO_NEXYS_A7_100T.sv:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 860.910 ; gain = 307.617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 860.910 ; gain = 307.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 860.910 ; gain = 307.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 860.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.srcs/constrs_1/imports/Desktop/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_IO_NEXYS_A7_100T_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_IO_NEXYS_A7_100T_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 962.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 962.309 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 962.309 ; gain = 409.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 962.309 ; gain = 409.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 962.309 ; gain = 409.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 962.309 ; gain = 409.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 16    
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 18    
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  17 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  11 Input      6 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MUX2X6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+Module Decoder 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      6 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module InstructionRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DataRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX2X32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ProgramCounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module MUX4X32_PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+Module MUX2X5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module MUX3X32_Data 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module MUX4X32_Data 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module CLA4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 2     
+Module CLA4_Marked 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 1     
+Module CLA32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+Module MUX2X1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module DataPath 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module Memory_IO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module IO 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module CLK_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX7SEG 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:07 . Memory (MB): peak = 1031.742 ; gain = 478.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++---------------------+------------------------------------------+-----------+----------------------+---------------------------+
+|Module Name          | RTL Object                               | Inference | Size (Depth x Width) | Primitives                | 
++---------------------+------------------------------------------+-----------+----------------------+---------------------------+
+|Top_IO_NEXYS_A7_100T | mips/DP/RF/RegFile_reg                   | Implied   | 32 x 32              | RAM32M x 12	              | 
+|Top_IO_NEXYS_A7_100T | MemoryDecoder_Nexys/Memory_io/memory_reg | Implied   | 256 x 32             | RAM64X1D x 8	RAM64M x 40	 | 
++---------------------+------------------------------------------+-----------+----------------------+---------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 1031.742 ; gain = 478.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:01:46 . Memory (MB): peak = 1275.695 ; gain = 722.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++---------------------+------------------------------------------+-----------+----------------------+---------------------------+
+|Module Name          | RTL Object                               | Inference | Size (Depth x Width) | Primitives                | 
++---------------------+------------------------------------------+-----------+----------------------+---------------------------+
+|Top_IO_NEXYS_A7_100T | mips/DP/RF/RegFile_reg                   | Implied   | 32 x 32              | RAM32M x 12	              | 
+|Top_IO_NEXYS_A7_100T | MemoryDecoder_Nexys/Memory_io/memory_reg | Implied   | 256 x 32             | RAM64X1D x 8	RAM64M x 40	 | 
++---------------------+------------------------------------------+-----------+----------------------+---------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:22 ; elapsed = 00:01:46 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Gated Clock Conversion
+---------------------------------------------------------------------------------
+Gated Clock Conversion mode: on
+Starting Gated Clock analysis for module 'Top_IO_NEXYS_A7_100T'
+[INFO] Found 0 combinational gated clocks in this module ('Top_IO_NEXYS_A7_100T')
+Starting Retiming in module 'Top_IO_NEXYS_A7_100T' because 0 clock gating related retiming opportunities were identifed.
+Finished Retiming in module 'Top_IO_NEXYS_A7_100T'.
+[INFO]: Retime+EdgeDetect gated clock conversion successful for gated clock '\MemoryDecoder_Nexys/clk_divider/out_reg_n_0 '. This gated clock drove 15 flops.
+End Gated Clock analysis for module 'Top_IO_NEXYS_A7_100T'
+-----------------------------------------------
+
+Report Gated Clocks: 
++-+---------------------+-----------+------------+---------+--------+--------+------+
+| |Gated Clock net name |Clock Name |Gating Type |#FF/SRLs |#RAMs_A |#RAMs_B |#DSPs |
++-+---------------------+-----------+------------+---------+--------+--------+------+
++-+---------------------+-----------+------------+---------+--------+--------+------+
+---------------------------------------------------------------------------------
+End Gated Clock Conversion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     8|
+|3     |LUT1     |     1|
+|4     |LUT2     |    34|
+|5     |LUT3     |    84|
+|6     |LUT4     |    69|
+|7     |LUT5     |   203|
+|8     |LUT6     |   386|
+|9     |MUXF7    |    37|
+|10    |RAM32M   |    12|
+|11    |RAM64M   |    40|
+|12    |RAM64X1D |     8|
+|13    |FDCE     |   203|
+|14    |FDPE     |     9|
+|15    |FDRE     |    75|
+|16    |IBUF     |    20|
+|17    |OBUF     |    15|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------------------+----------------------------+------+
+|      |Instance                    |Module                      |Cells |
++------+----------------------------+----------------------------+------+
+|1     |top                         |                            |  1205|
+|2     |  MemoryDecoder_Nexys       |MemoryDecoder_NEXYS_A7_100T |   232|
+|3     |    Memory_io               |Memory_IO                   |    80|
+|4     |    clk_divider             |CLK_div                     |    53|
+|5     |    io                      |IO                          |    57|
+|6     |    mux7seg                 |MUX7SEG                     |    42|
+|7     |  mips                      |MIPS                        |   937|
+|8     |    DEC                     |Decoder                     |   411|
+|9     |    DP                      |DataPath                    |   526|
+|10    |      Data_A                |DataRegister                |    99|
+|11    |      Data_B                |DataRegister_0              |    32|
+|12    |      IR                    |InstructionRegister         |   198|
+|13    |      MDR                   |DataRegister_1              |    32|
+|14    |      PC_                   |ProgramCounter              |    41|
+|15    |      RF                    |RegisterFile                |    12|
+|16    |      get_PreviousALUresult |DataRegister_2              |   112|
++------+----------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:51 . Memory (MB): peak = 1276.754 ; gain = 723.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:48 . Memory (MB): peak = 1276.754 ; gain = 622.062
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:52 . Memory (MB): peak = 1276.754 ; gain = 723.461
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1276.754 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1276.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 40 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:59 . Memory (MB): peak = 1276.754 ; gain = 988.258
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1276.754 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Half Blood Prince/Desktop/Multi-Cycle-MIPS-Basic-IO2/Multi-Cycle-MIPS-Basic-IO.runs/synth_1/Top_IO_NEXYS_A7_100T.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_IO_NEXYS_A7_100T_utilization_synth.rpt -pb Top_IO_NEXYS_A7_100T_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 19:50:33 2024...

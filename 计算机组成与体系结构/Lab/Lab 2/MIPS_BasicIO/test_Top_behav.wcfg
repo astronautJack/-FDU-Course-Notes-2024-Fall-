@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_Top_IO_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_ALU_sv " />
+            <top_module name="glbl" />
+            <top_module name="test_Top_IO" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="800500fs"></ZoomStartTime>
+      <ZoomEndTime time="1039901fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/Write" type="logic">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/addr" type="array">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/buttonL" type="logic">
+      <obj_property name="ElementShortName">buttonL</obj_property>
+      <obj_property name="ObjectShortName">buttonL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/buttonR" type="logic">
+      <obj_property name="ElementShortName">buttonR</obj_property>
+      <obj_property name="ObjectShortName">buttonR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/switch" type="array">
+      <obj_property name="ElementShortName">switch[15:0]</obj_property>
+      <obj_property name="ObjectShortName">switch[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/AN" type="array">
+      <obj_property name="ElementShortName">AN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/A2G" type="array">
+      <obj_property name="ElementShortName">A2G[6:0]</obj_property>
+      <obj_property name="ObjectShortName">A2G[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/DMReadData" type="array">
+      <obj_property name="ElementShortName">DMReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DMReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/DMWriteEn" type="logic">
+      <obj_property name="ElementShortName">DMWriteEn</obj_property>
+      <obj_property name="ObjectShortName">DMWriteEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/pReadData" type="array">
+      <obj_property name="ElementShortName">pReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pReadData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/led" type="array">
+      <obj_property name="ElementShortName">led[11:0]</obj_property>
+      <obj_property name="ObjectShortName">led[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/pRead" type="logic">
+      <obj_property name="ElementShortName">pRead</obj_property>
+      <obj_property name="ObjectShortName">pRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/pWrite" type="logic">
+      <obj_property name="ElementShortName">pWrite</obj_property>
+      <obj_property name="ObjectShortName">pWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/DP" type="logic">
+      <obj_property name="ElementShortName">DP</obj_property>
+      <obj_property name="ObjectShortName">DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/digit" type="array">
+      <obj_property name="ElementShortName">digit[31:0]</obj_property>
+      <obj_property name="ObjectShortName">digit[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/AN" type="array">
+      <obj_property name="ElementShortName">AN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/DP" type="logic">
+      <obj_property name="ElementShortName">DP</obj_property>
+      <obj_property name="ObjectShortName">DP</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/A2G" type="array">
+      <obj_property name="ElementShortName">A2G[6:0]</obj_property>
+      <obj_property name="ObjectShortName">A2G[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/current_digit" type="array">
+      <obj_property name="ElementShortName">current_digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_digit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_Top_IO/top_IO/DMdecoder/mux7seg/refresh_counter" type="array">
+      <obj_property name="ElementShortName">refresh_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">refresh_counter[2:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,36 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Applications/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 4205ba5d90544a34bff79befecea8387 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_Top_IO_behav xil_defaultlib.test_Top_IO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_DMDecoder_sv
+Compiling module xil_defaultlib.InstructionMemory_IO
+Compiling module xil_defaultlib.MUX2X5
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.CLA4
+Compiling module xil_defaultlib.CLA4_Marked
+Compiling module xil_defaultlib.CLA32
+Compiling module xil_defaultlib.MUX2X32
+Compiling module xil_defaultlib.PCadder
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.EXTENDER
+Compiling module xil_defaultlib.ALUCONTROL
+Compiling module xil_defaultlib.Shifter
+Compiling module xil_defaultlib.MUX6X32
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataPath
+Compiling module xil_defaultlib.MIPS
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.IO
+Compiling module xil_defaultlib.MUX7SEG
+Compiling module xil_defaultlib.DMDecoder
+Compiling module xil_defaultlib.Top_IO
+Compiling module xil_defaultlib.test_Top_IO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_Top_IO_behav

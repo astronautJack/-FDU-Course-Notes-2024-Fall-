@@ -1,0 +1,93 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Jun  3 19:51:27 2024
+| Host         : DESKTOP-Severus-Snape running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_IO_NEXYS_A7_100T_control_sets_placed.rpt
+| Design       : Top_IO_NEXYS_A7_100T
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    15 |
+|    Minimum number of control sets                        |    15 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    15 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |             133 |           65 |
+| No           | Yes                   | No                     |              31 |            8 |
+| Yes          | No                    | No                     |              12 |            2 |
+| Yes          | No                    | Yes                    |              79 |           44 |
+| Yes          | Yes                   | No                     |              30 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------------+-------------------------------------+------------------+----------------+
+|  Clock Signal  |                    Enable Signal                   |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+----------------------------------------------------+-------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | buttonL_IBUF                                       | mips/DEC/SR[0]                      |                1 |              1 |
+|  clk_IBUF_BUFG |                                                    |                                     |                2 |              2 |
+|  clk_IBUF_BUFG | mips/DEC/CurrentState_reg[3]_5[0]                  | reset_IBUF                          |                4 |             12 |
+|  clk_IBUF_BUFG | MemoryDecoder_Nexys/io/led[11]_i_1_n_0             |                                     |                2 |             12 |
+|  clk_IBUF_BUFG | MemoryDecoder_Nexys/clk_divider/out_reg_0          | reset_IBUF                          |                8 |             15 |
+|  clk_IBUF_BUFG | buttonR_IBUF                                       | reset_IBUF                          |                6 |             17 |
+|  clk_IBUF_BUFG |                                                    | MemoryDecoder_Nexys/clk_divider/out |                8 |             31 |
+|  clk_IBUF_BUFG | mips/DEC/CurrentState_reg[3]_7[0]                  | reset_IBUF                          |               23 |             32 |
+|  clk_IBUF_BUFG | mips/DEC/E[0]                                      | reset_IBUF                          |               13 |             32 |
+|  clk_IBUF_BUFG | mips/DP/PC_/PC_reg[9]_0                            |                                     |               11 |             44 |
+|  clk_IBUF_BUFG | mips/DP/PC_/PC_reg[8]_0                            |                                     |               11 |             44 |
+|  clk_IBUF_BUFG | mips/DP/get_PreviousALUresult/CurrentData_reg[8]_1 |                                     |               11 |             44 |
+|  clk_IBUF_BUFG | mips/DP/get_PreviousALUresult/CurrentData_reg[8]_0 |                                     |               11 |             44 |
+|  clk_IBUF_BUFG | mips/DEC/RegWriteEn0                               |                                     |               12 |             96 |
+|  clk_IBUF_BUFG |                                                    | reset_IBUF                          |               65 |            133 |
++----------------+----------------------------------------------------+-------------------------------------+------------------+----------------+
+
+
