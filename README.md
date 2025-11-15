@@ -41,9 +41,6 @@ Bilibili 主页: [YCY_HBP](https://space.bilibili.com/1022387332?spm_id_from=333
 Zehao Zhang 学长 (@ForeverHaibara) star 我了 (开心 \o/)，  
 这一切都是受他的笔记启发而整理的 (参见 [ForeverHaibara/Fudan-Courses](https://github.com/ForeverHaibara/Fudan-Courses)).
 
-我的笔记是在 Typora 软件上编写的，个人觉得它非常好用，不过我的朋友们更多用的是 Obsidian.  
-此软件的破解请参考 [Typora 1.9.5 Crack](https://zhuanlan.zhihu.com/p/24871306107).
-
 **PS:**
 
 - 目前仅上传了笔记编译后的 PDF，Markdown 源码将在后续开源.  
@@ -64,7 +61,7 @@ Zehao Zhang 学长 (@ForeverHaibara) star 我了 (开心 \o/)，
   
   <img src="./figures/fig-3.png" style="zoom:45%;" />
   
-- 最后，关于 "拼尽全力无法下载" 的问题，大概率是没有使用 VPN 或 VPN 不够稳定.  
+- 关于 "拼尽全力无法下载" 的问题，大概率是没有使用 VPN 或 VPN 不够稳定.  
   可以使用 [v2free](https://v2free.net/) 的 V2rayN (如图所示)，我用了三年，比较稳定.  
   我订阅的是年付套餐 $\text{O}$，价格是 $112$ 元/年，每月 $\text{50 GB}$ 流量，基本够用.  
   当然，你也可以货比三家，找找有没有更便宜更好用的 VPN.  
@@ -73,3 +70,13 @@ Zehao Zhang 学长 (@ForeverHaibara) star 我了 (开心 \o/)，
   (大四生活比较闲，不必担心打扰我)
   
   <img src="./figures/fig-2.png" style="zoom:45%;" />
+
+- 我的笔记是在 Typora 软件上编写的，个人觉得它非常好用，不过我的朋友们更多用的是 Obsidian.   
+  此软件的破解请参考 [Typora 1.9.5 Crack](https://zhuanlan.zhihu.com/p/24871306107)，仅供交流学习.  
+  郑重声明，Typora 是一款非常出色的 Markdown 编辑器，若有条件，请支持正版，尊重开发者的劳动成果.
+
+  <img src="./figures/Typora.png" style="zoom:40%;" />
+  
+  注: 马志远是我的朋友 (实际上他是我的儿子，不过他不承认)，我上网的时候经常冒用他的名字，and vice versa.
+
+Mischief managed!
