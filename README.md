@@ -41,7 +41,7 @@ Bilibili 主页: [YCY_HBP](https://space.bilibili.com/1022387332?spm_id_from=333
 Zehao Zhang 学长 (@ForeverHaibara) star 我了 (开心 \o/)，  
 这一切都是受他的笔记启发而整理的 (参见 [ForeverHaibara/Fudan-Courses](https://github.com/ForeverHaibara/Fudan-Courses)).
 
-大学的学习，难的就是资料太零散，要避开的坑多，信息渠道又很少.
+大学的学习，难的就是资料太零散，要避开的坑多，信息渠道又很少.  
 学习本就是一场接力赛，如果这份笔记能为你省下半小时，请把时间用在更值得的地方.
 
 **PS:**
